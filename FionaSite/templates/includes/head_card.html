@@ -1,0 +1,29 @@
+
+<div class="card">
+    <div class="card-header alert-success">
+        {% block cardheader %}
+        {% endblock %}
+    </div>
+    <div class="card-body">
+        <div id="localnav">
+            {% block nav %}
+            {% endblock %}
+        </div>
+
+
+        {% block cardbody %}
+
+        {% endblock %}
+    </div>
+    <div class="card-footer">
+        {% block cardfooter %}
+        {% endblock %}
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('#localnav').localScroll({duration:800});
+        }
+    );
+</script>

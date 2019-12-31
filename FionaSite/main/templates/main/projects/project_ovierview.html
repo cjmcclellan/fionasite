@@ -1,0 +1,17 @@
+{% extends 'includes/basic_card.html' %}
+
+{% block cardheader %}
+    <h2>Projects</h2>
+{% endblock %}
+
+{% block cardbody %}
+    <dl class="dl-horizontal lead">
+        <dd>
+           Apart from my <a href="{% url 'main:research' %}">research</a>, I have some side projects I routinely
+            work on.  My main interests are in AI apps (Dash + Tensorflow), telescope building, and website developing.
+        </dd>
+        <dd>
+           Some of my coding projects are available on my <a href="https://github.com/cjmcclellan">github</a> (a few are private repos).
+        </dd>
+    </dl>
+{% endblock %}

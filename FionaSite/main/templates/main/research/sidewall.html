@@ -1,0 +1,28 @@
+{% extends 'includes/basic_card.html' %}
+
+{% block cardheader %}
+    <h2 id="sidewall_card">Sidewall/Vertical Growth of MoS<sub>2</sub></h2>
+{#    <a href="https://ieeexplore.ieee.org/abstract/document/7999392/">McClellan, IEEE DRC 2017</a>#}
+{% endblock %}
+
+{% block cardbody %}
+    <div class="row">
+        <div class="col">
+            <dl class="dl-horizontal lead">
+                <dd>
+                    I'm very excited about this project as it shows a major difference between 2D materials (such as MoS<sub>2</sub>) and
+                    bulk materials like Si and InGaAs.  The Scanning Electron Microscopy (SEM) image on the right displays monolayer (0.6 nm thick!)
+                    Mo<sub>2</sub> deposited directly on SiO<sub>2</sub>/Si sidewall.  This could have huge implications for technologies like
+                    3D NAND flash and DRAM, which require high-density transistors (i.e. vertical) for scaling and reducing costs.
+                </dd>
+                <dd>
+
+                </dd>
+            </dl>
+        </div>
+        <div class="col">
+            {% include 'includes/basic_carousel.html' with carousel_name='sidewall' input_path='/static/images/research/sidewall' %}
+        </div>
+    </div>
+
+{% endblock %}

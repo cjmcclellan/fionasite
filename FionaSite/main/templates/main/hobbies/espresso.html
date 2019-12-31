@@ -1,0 +1,22 @@
+{% extends 'includes/basic_card.html' %}
+
+{% block cardheader %}
+    <h2>Espresso Crafting</h2>
+{% endblock %}
+
+{% block cardbody %}
+    <div class="row">
+        <div class="col">
+            <dl class="dl-horizontal lead">
+            <dd>
+               Since 2011 I have owned a Gaggia Classic Espresso Machine and Gaggia MDF burr grinder.
+                In total, I've made probably around 2000 cappuccinos (1:3 espresso:steamed milk) and macchiatos (1:1 espresso:steamed milk).
+                If you have any espresso related questions, please ask me.
+            </dd>
+            </dl>
+        </div>
+        <div class="col">
+            {% include 'includes/basic_carousel.html' with carousel_name='espresso' input_path='/static/images/espresso/latte_art' %}
+        </div>
+    </div>
+{% endblock %}

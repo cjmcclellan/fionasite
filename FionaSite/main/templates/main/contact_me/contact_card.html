@@ -1,0 +1,39 @@
+{% extends 'includes/basic_card.html' %}
+
+{% block cardheader %}
+    <h2>Contact Me</h2>
+{% endblock %}
+
+{% block cardbody %}
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="email" class="control-label mb-1"><strong>Your Email: </strong></label>
+                <input id="id_email" name="email" type="text" class="form-control" aria-required="true"
+                       aria-invalid="false" value="">
+                {% for error in forms.email.errors%}
+                    <p class="text-warning">{{ error }}</p>
+                {% endfor %}
+            </div>
+            <div class="form-group">
+                <label for="subject" class="control-label mb-1"><strong>Subject:</strong></label>
+                <input name="subject" type="text" aria-required="true" id="id_subject" class="form-control">
+                {% for error in forms.subject.errors%}
+                    <p class="text-warning">{{ error }}</p>
+                {% endfor %}
+            </div>
+            <div class="form-group">
+                <label for="message" class="control-label mb-1"><strong>Message:</strong></label>
+                <textarea name="message" id="id_message" rows="9" class="form-control"></textarea>
+                {% for error in forms.message.errors%}
+                    <p class="text-warning">{{ error }}</p>
+                {% endfor %}
+            </div>
+{% endblock %}
+
+{% block cardfooter %}
+    <button id="submit_email" type="submit" class="btn btn-lg btn-info">
+        <span id="payment-button-amount">Send Email</span>
+    </button>
+    </form>
+{% endblock %}

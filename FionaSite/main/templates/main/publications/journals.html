@@ -1,0 +1,11 @@
+{% extends 'includes/basic_card.html' %}
+
+{% block cardheader %}
+    <h2>Journal Papers</h2>
+{% endblock %}
+
+{% block cardbody %}
+
+    {% include 'includes/table_search.html' with table_name='journals' header=journals_header entries=journals_entries %}
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'main/index.html' %}
+
+
+{% block content %}
+    {% load staticfiles %}
+
+    {% include 'main/publications/publications.html' %}
+    <br>
+        {% include 'main/publications/talks.html' %}
+    <br>
+    <br>
+        {% include 'main/publications/journals.html' %}
+    <br>
+{% endblock %}

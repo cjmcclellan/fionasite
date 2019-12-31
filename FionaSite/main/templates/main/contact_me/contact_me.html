@@ -1,0 +1,49 @@
+{% extends 'main/index.html' %}
+
+
+{% block content %}
+
+    {% include 'main/contact_me/contact_card.html' %}
+{#    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">#}
+{#  Launch demo modal#}
+{#</button>#}
+    <div class="modal" id="contact_modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Success!</h5>
+      </div>
+      <div class="modal-body">
+        <p>I will respond to you as soon as possible. </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script>
+    var temp = ("{{contact_success }}" === "True");
+
+    if (temp){
+        {#modal = document.getElementById('contact_modal');#}
+        {#console.log(modal);#}
+        $('#contact_modal').modal('toggle');
+     }
+</script>
+
+{% endblock %}
+
+{% block javascript %}
+{#{{ block.super }}#}
+{#<script>#}
+{#    console.log('here');#}
+{#    var temp = {{ context_data.contact_success }};#}
+{#    console.log(temp);#}
+    {#if ({{ context_data.contact_success }}){#}
+    {#    modal = document.getElementById('contact_modal');#}
+    {#    modal.toggle();#}
+    {# }#}
+{#</script>#}
+{% endblock %}

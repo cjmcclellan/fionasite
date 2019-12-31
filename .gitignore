@@ -1,0 +1,6 @@
+.idea/
+env/
+AWS/
+FionaSite/static/images/big_images/
+*.pyc
+*.cpython-35.pyc

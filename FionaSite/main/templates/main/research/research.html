@@ -1,0 +1,25 @@
+{% extends 'main/index.html' %}
+
+
+{% block content %}
+    {% load staticfiles %}
+    {% include 'main/research/research_nav.html' %}
+    {% include 'main/research/research_overview_card.html' %}
+    <br>
+        {% include 'main/research/sidewall.html' %}
+    <br>
+    <br>
+        {% include 'main/research/doping.html' %}
+    <br>
+    {% include 'main/research/steep_switching.html' %}
+{#    <div class="col-lg-10" style="padding-top: 50px">#}
+{#        <div class="card">#}
+{#            <div class="row">#}
+{#                <div class="col">#}
+{#                    Here's a link to my <a href="https://scholar.google.com/citations?user=8SahWQsAAAAJ&hl=en">Google Scholar</a>.#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+
+{% endblock %}

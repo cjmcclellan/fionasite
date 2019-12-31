@@ -1,0 +1,10 @@
+{% extends 'main/index.html' %}
+
+
+{% block content %}
+    {% load staticfiles %}
+    {% include 'main/projects/project_ovierview.html' %}
+    <br>
+        {% include 'main/projects/face_rec.html' %}
+    <br>
+{% endblock %}

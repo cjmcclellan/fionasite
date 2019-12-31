@@ -1,0 +1,23 @@
+{% extends 'includes/basic_card.html' %}
+
+{% block cardheader %}
+    <h2>Outdoor Adventures</h2>
+{% endblock %}
+
+{% block cardbody %}
+    <div class="row">
+        <div class="col">
+            <dl class="dl-horizontal lead">
+
+            <dd>
+               While I'm about computers, I need to get outside sometimes.  I've traveled the world a decent amount,
+                having been around America, England, France, Italy, Switzerland, Hong Kong, and Taiwan (and more to come).
+            </dd>
+            </dl>
+
+        </div>
+        <div class="col">
+            {% include 'includes/basic_carousel.html' with carousel_name='outdoors' input_path='/static/images/outdoors/various' %}
+        </div>
+    </div>
+{% endblock %}

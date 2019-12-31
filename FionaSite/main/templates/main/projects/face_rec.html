@@ -1,0 +1,26 @@
+{% extends 'includes/basic_card.html' %}
+
+{% block cardheader %}
+    <h2>Actor Face Recognition</h2>
+    with <a href="">Alex Gabourie</a>
+{% endblock %}
+
+{% block cardbody %}
+    <div class="row">
+        <div class="col">
+            <dl class="dl-horizontal lead">
+                <dd>
+                    The major advances in AI computer vision have enabled new applications.  One such is facial recognition,
+                using new neural network structures.  In this project, I utilized the "triplet loss" function to develop
+                a deep learning model that recognized actors faces using one-shot learning (1 face example).
+                <dd>
+
+                </dd>
+            </dl>
+        </div>
+        <div class="col">
+            {% include 'includes/basic_carousel.html' with carousel_name='face_rec' input_path='/static/images/projects/face_rec' %}
+        </div>
+    </div>
+
+{% endblock %}
