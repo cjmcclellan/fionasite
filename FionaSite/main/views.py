@@ -69,7 +69,7 @@ class ContactMe(FormView):
         # make sure the form is valid.  Otherwise, send back to user
         if form.is_valid():
             try:
-                subject = form.cleaned_data['subject'] + ' from ' + form.cleaned_data['email']
+                subject = form.cleaned_data['subject'] + ' from ' + form.cleaned_data['email'] + ' to Fiona'
                 send_mail(subject, form.cleaned_data['message'],
                           settings.EMAIL_HOST_USER,
                           [settings.EMAIL_CONTACT], fail_silently=False)

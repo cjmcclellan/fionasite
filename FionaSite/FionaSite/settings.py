@@ -26,7 +26,7 @@ SECRET_KEY = '^&4iyz7wnum!vsz_ynuwfwd)w=wbs4#0p!lb+u)_(gk7++$wr@'
 DEBUG = False
 
 ALLOWED_HOSTS = ['www.fionachwang.com']
-
+# ALLOWED_HOSTS = []
 
 # Application definition
 

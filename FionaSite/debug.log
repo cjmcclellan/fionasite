@@ -37,3 +37,400 @@ Bad Request: /
 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
 Bad Request: /favicon.ico
 "GET /favicon.ico HTTP/1.1" 400 26
+Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /
+"GET / HTTP/1.1" 400 26
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET / HTTP/1.1" 302 0
+"GET /home HTTP/1.1" 200 4740
+"GET /static/images/fiona_cover_image.jpeg HTTP/1.1" 404 1711
+"GET /static/images/fiona_cover_image.jpeg HTTP/1.1" 404 1711
+"GET /research HTTP/1.1" 200 15077
+"GET /static/images/research/mono/1T1R.png HTTP/1.1" 404 1711
+"GET /static/images/research/bp/BP_2.jpg HTTP/1.1" 404 1705
+"GET /static/images/research/selector/Selector.png HTTP/1.1" 404 1735
+"GET /static/images/research/mono/1T1R.png HTTP/1.1" 404 1711
+"GET /static/images/research/bp/BP_2.jpg HTTP/1.1" 404 1705
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern ''>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern 'home' [name='home']>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern 'research' [name='research']>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern 'display' [name='display']>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern 'contact_me' [name='contact_me']>]], 'path': 'ajax/ajax_carousel_images'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Not Found: /ajax/ajax_carousel_images
+"GET /ajax/ajax_carousel_images?path=%2Fstatic%2Fimages%2Fresearch%2Fsidewall HTTP/1.1" 404 2892
+"GET /home HTTP/1.1" 200 4740
+"GET /static/images/fiona_cover_image.jpeg HTTP/1.1" 404 1711
+"GET /research HTTP/1.1" 200 15077
+"GET /static/images/research/mono/1T1R.png HTTP/1.1" 404 1711
+"GET /static/images/research/selector/Selector.png HTTP/1.1" 404 1735
+"GET /static/images/research/bp/BP_2.jpg HTTP/1.1" 404 1705
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern ''>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern 'home' [name='home']>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern 'research' [name='research']>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern 'display' [name='display']>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern 'contact_me' [name='contact_me']>]], 'path': 'ajax/ajax_carousel_images'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Not Found: /ajax/ajax_carousel_images
+"GET /ajax/ajax_carousel_images?path=%2Fstatic%2Fimages%2Fresearch%2Fsidewall HTTP/1.1" 404 2892
+"GET /research HTTP/1.1" 200 15077
+"GET /static/images/research/mono/1T1R.png HTTP/1.1" 404 1711
+"GET /static/images/research/selector/Selector.png HTTP/1.1" 404 1735
+"GET /static/images/research/bp/BP_2.jpg HTTP/1.1" 404 1705
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern ''>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern 'home' [name='home']>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern 'research' [name='research']>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern 'display' [name='display']>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern 'contact_me' [name='contact_me']>]], 'path': 'ajax/ajax_carousel_images'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Not Found: /ajax/ajax_carousel_images
+"GET /ajax/ajax_carousel_images?path=%2Fstatic%2Fimages%2Fresearch%2Fsidewall HTTP/1.1" 404 2892
+"GET /research HTTP/1.1" 200 14959
+"GET /static/images/research/mono/1T1R.png HTTP/1.1" 404 1711
+"GET /static/images/research/bp/BP_2.jpg HTTP/1.1" 404 1705
+"GET /static/images/research/selector/Selector.png HTTP/1.1" 404 1735
+"GET /static/images/research/mono/1T1R.png HTTP/1.1" 404 1711
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern ''>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern 'home' [name='home']>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern 'research' [name='research']>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern 'display' [name='display']>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern 'contact_me' [name='contact_me']>]], 'path': 'ajax/ajax_carousel_images'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Not Found: /ajax/ajax_carousel_images
+"GET /static/images/research/selector/Selector.png HTTP/1.1" 404 1735
+"GET /static/images/research/bp/BP_2.jpg HTTP/1.1" 404 1705
+"GET /ajax/ajax_carousel_images?path=%2Fstatic%2Fimages%2Fresearch%2Fsidewall HTTP/1.1" 404 2892
+"GET /home HTTP/1.1" 200 4622
+"GET /static/images/fiona_cover_image.jpeg HTTP/1.1" 404 1711
+"GET /static/images/fiona_cover_image.jpeg HTTP/1.1" 404 1711
+"GET /research HTTP/1.1" 200 14959
+"GET /static/images/research/mono/1T1R.png HTTP/1.1" 404 1711
+"GET /static/images/research/selector/Selector.png HTTP/1.1" 404 1735
+"GET /static/images/research/bp/BP_2.jpg HTTP/1.1" 404 1705
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern ''>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern 'home' [name='home']>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern 'research' [name='research']>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern 'display' [name='display']>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern 'contact_me' [name='contact_me']>]], 'path': 'ajax/ajax_carousel_images'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Not Found: /ajax/ajax_carousel_images
+"GET /ajax/ajax_carousel_images?path=%2Fstatic%2Fimages%2Fresearch%2Fsidewall HTTP/1.1" 404 2892
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /research HTTP/1.1" 200 12795
+"GET /static/images/research/review/Review.jpg HTTP/1.1" 404 1723
+"GET /static/images/research/mono/1T1R.png HTTP/1.1" 404 1711
+"GET /static/images/research/selector/Selector.png HTTP/1.1" 404 1735
+"GET /static/images/research/bp/BP_2.jpg HTTP/1.1" 404 1705
+"GET /static/images/research/review/Review.jpg HTTP/1.1" 404 1723
+"GET /static/images/research/mono/1T1R.png HTTP/1.1" 404 1711
+"GET /home HTTP/1.1" 200 4622
+"GET /static/images/fiona_cover_image.jpeg HTTP/1.1" 404 1711
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /research HTTP/1.1" 200 12837
+"GET /static/images/research/mono/1T1R.png HTTP/1.1" 404 1711
+"GET /static/images/research/selector/Selector.png HTTP/1.1" 404 1735
+"GET /static/images/research/review/Review.jpg HTTP/1.1" 404 1723
+"GET /static/images/research/bp/BP_2.jpg HTTP/1.1" 404 1705
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern ''>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern 'home' [name='home']>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern 'research' [name='research']>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern 'display' [name='display']>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern 'contact_me' [name='contact_me']>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2804
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /research HTTP/1.1" 200 12841
+"GET /static/images/research/mono/1T1R.png HTTP/1.1" 404 1711
+"GET /static/images/research/review/Review.jpg HTTP/1.1" 404 1723
+"GET /static/images/research/selector/Selector.png HTTP/1.1" 404 1735
+"GET /static/images/research/bp/BP_2.jpg HTTP/1.1" 404 1705
+"GET /research HTTP/1.1" 200 12841
+"GET /static/images/research/mono/1T1R.png HTTP/1.1" 404 1711
+"GET /static/images/research/selector/Selector.png HTTP/1.1" 404 1735
+"GET /static/images/research/bp/BP_2.jpg HTTP/1.1" 404 1705
+"GET /static/images/research/review/Review.jpg HTTP/1.1" 404 1723
+"GET /static/images/research/mono/1T1R.png HTTP/1.1" 404 1711
+"GET /static/images/research/review/Review.jpg HTTP/1.1" 404 1723
+"GET /static/images/research/selector/Selector.png HTTP/1.1" 404 1735
+"GET /static/images/research/bp/BP_2.jpg HTTP/1.1" 404 1705
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/urls/resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern ''>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern 'home' [name='home']>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern 'research' [name='research']>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern 'display' [name='display']>], [<URLResolver <module 'main.urls' from '/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/FionaSite/main/urls.py'> (main:main) ''>, <URLPattern 'contact_me' [name='contact_me']>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/template/base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/connor/Documents/Personal_Projects/OtherWebsites/Fionasite/fionasite/env/lib/python3.6/site-packages/django/template/base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2804
+"GET /research HTTP/1.1" 200 12855
+"GET /static/images/research/mono/1T1R.png HTTP/1.1" 404 1711
+"GET /static/images/research/selector/Selector.png HTTP/1.1" 404 1735
+"GET /static/images/research/review/Review.jpg HTTP/1.1" 404 1723
+"GET /static/images/research/bp/BP_2.jpg HTTP/1.1" 404 1705
+"GET /static/images/research/mono/1T1R.png HTTP/1.1" 404 1711
+"GET /static/images/research/selector/Selector.png HTTP/1.1" 404 1735
+"GET /static/images/research/review/Review.jpg HTTP/1.1" 404 1723
+"GET /home HTTP/1.1" 200 4622
+"GET /static/images/fiona_cover_image.jpeg HTTP/1.1" 404 1711
+"GET /research HTTP/1.1" 200 12855
+"GET /static/images/research/mono/1T1R.png HTTP/1.1" 404 1711
+"GET /static/images/research/review/Review.jpg HTTP/1.1" 404 1723
+"GET /static/images/research/selector/Selector.png HTTP/1.1" 404 1735
+"GET /static/images/research/bp/BP_2.jpg HTTP/1.1" 404 1705
+"GET /static/images/research/mono/1T1R.png HTTP/1.1" 404 1711
+"GET /static/images/research/review/Review.jpg HTTP/1.1" 404 1723
+"GET /research HTTP/1.1" 200 12858
+"GET /static/images/research/mono/1T1R.png HTTP/1.1" 404 1711
+"GET /static/images/research/review/Review.jpg HTTP/1.1" 404 1723
+"GET /static/images/research/selector/Selector.png HTTP/1.1" 404 1735
+"GET /static/images/research/bp/BP_2.jpg HTTP/1.1" 404 1705
+"GET /static/images/research/mono/1T1R.png HTTP/1.1" 404 1711
+"GET /static/images/research/review/Review.jpg HTTP/1.1" 404 1723
+"GET /static/images/research/selector/Selector.png HTTP/1.1" 404 1735
+"GET /static/images/research/bp/BP_2.jpg HTTP/1.1" 404 1705
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /research HTTP/1.1" 200 12861
+"GET /static/images/research/mono/1T1R.png HTTP/1.1" 404 1711
+"GET /static/images/research/selector/Selector.png HTTP/1.1" 404 1735
+"GET /static/images/research/review/Review.jpg HTTP/1.1" 404 1723
+"GET /static/images/research/bp/BP_2.jpg HTTP/1.1" 404 1705
+"GET /home HTTP/1.1" 200 4746
+"GET /static/images/fiona_cover_image.jpeg HTTP/1.1" 404 1711
+"GET /static/images/fiona_cover_image.jpeg HTTP/1.1" 404 1711
