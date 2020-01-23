@@ -1,6 +1,20 @@
-{% extends 'includes/nav_card.html' %}
+{% extends 'includes/page_contents_nav.html' %}
 
-{% block nav %}
-    <h4><a href="#sidewall_card">Sidewall</a> &nbsp &nbsp <a href="#doping_card">High Current</a> &nbsp &nbsp <a href="#power_card">Low-Power</a></h4>
+{% block title %}
+    Research Projects
 {% endblock %}
 
+{% block nav_items %}
+    <li class="nav-item">
+        <a class="nav-link" href="#mono_card">3D Monolithic</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#review_card">Review Paper</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#selector_card">Memory Selector</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#bp_card">Black Phosphorus</a>
+    </li>
+{% endblock %}

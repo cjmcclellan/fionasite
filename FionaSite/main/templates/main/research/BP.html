@@ -1,0 +1,29 @@
+{% extends 'includes/basic_card.html' %}
+
+{% block cardheader %}
+    <h2 id="bp_card" class="target">N-type Black Phosphorus</h2>
+    <a href="https://ieeexplore.ieee.org/abstract/document/7999392/">Wang, </a>
+{% endblock %}
+
+{% block cardbody %}
+    <div class="row">
+        <div class="col">
+            <dl class="dl-horizontal lead">
+                <dd>
+                    Black phosphorus (BP) is an air sensitive 2D material, and also one kind of thin film materials) with in theory superior
+                    mobility than other 2D semiconducting material. Most research focus on p-type transistor, however, for CMOS, fabricating
+                    p-type and n-type transistors on the same material is necessary. In this research, I developed a novel BP transistor
+                    with Scandium as source/drain contacts and achieved a record high on-current of n-type BP FET. I had to overcome several
+                    fabrication challenges, such as air sensitivity, meaning many late nights.
+                </dd>
+                <dd>
+
+                </dd>
+            </dl>
+        </div>
+        <div class="col">
+            {% include 'includes/basic_carousel.html' with carousel_name='bp' input_path='/static/images/research/bp' %}
+        </div>
+    </div>
+
+{% endblock %}

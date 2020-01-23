@@ -1,0 +1,26 @@
+{% extends 'includes/basic_card.html' %}
+
+{% block cardheader %}
+    <h2 id="mono_card" class="target">3D Monolithic Memory Systems</h2>
+    <a href="https://ieeexplore.ieee.org/abstract/document/7999392/">McClellan, IEEE DRC 2017</a>
+{% endblock %}
+
+{% block cardbody %}
+    <div class="row">
+        <div class="col">
+            <dl class="dl-horizontal lead">
+                <dd>
+                    The computing speed is not limited by the single device performance but the bandwidth between on chip logic and
+                    off chip memory, which is called the “memory wall”. 3D stacking memory on logic would be the most efficient solution
+                    for breaking this wall and 2D materials are promising for 3D stacking due to their low temperature processing. To
+                    demonstrate this promise, I designed and fabricated a novel 3D monolithic memory cell, integrating MoS2 FETs and RRAM
+                    for high density non-volatile memory.
+                </dd>
+            </dl>
+        </div>
+        <div class="col">
+            {% include 'includes/basic_carousel.html' with carousel_name='mono' input_path='/static/images/research/mono' %}
+        </div>
+    </div>
+
+{% endblock %}

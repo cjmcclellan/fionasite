@@ -3,23 +3,21 @@
 
 {% block content %}
     {% load staticfiles %}
-    {% include 'main/research/research_nav.html' %}
     {% include 'main/research/research_overview_card.html' %}
     <br>
-        {% include 'main/research/sidewall.html' %}
+        {% include 'main/research/3D.html' %}
     <br>
+            {% include 'main/research/review.html' %}
     <br>
-        {% include 'main/research/doping.html' %}
+        {% include 'main/research/selector.html' %}
     <br>
-    {% include 'main/research/steep_switching.html' %}
-{#    <div class="col-lg-10" style="padding-top: 50px">#}
-{#        <div class="card">#}
-{#            <div class="row">#}
-{#                <div class="col">#}
-{#                    Here's a link to my <a href="https://scholar.google.com/citations?user=8SahWQsAAAAJ&hl=en">Google Scholar</a>.#}
-{#                </div>#}
-{#            </div>#}
-{#        </div>#}
-{#    </div>#}
+    {% include 'main/research/BP.html' %}
 
+    <div style="padding-top: 500px">
+
+    </div>
+{% endblock %}
+
+{% block sidebar %}
+        {% include 'main/research/research_nav.html' %}
 {% endblock %}

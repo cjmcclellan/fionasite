@@ -1,0 +1,87 @@
+<style>
+    li.active_side {
+        background-color: #2bbbad;
+    }
+    a.nav-link {
+        color: #0c5460;
+    }
+</style>
+<div class="shadow-lg p-3 rounded" id="page_contents" style="height: 0; width: 12rem; background-color: #c8cbcf; box-shadow: 0 6px 6px rgba(0,0,0,0.2);">
+    <!-- Links -->
+    <div style="height: 30px; line-height: 30px; background-color: #03a9f4; box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+     text-align: center; border-radius: 2px;">
+        <p><b>
+            <a href="#nav_bar" style="color: #000000">
+            {% block title %}
+            {% endblock %}
+            </a>
+        </b></p>
+    </div>
+    <div style="padding-top: 10px">
+    <nav>
+    <ul class="nav nav-pills nav-justified">
+        {% block nav_items %}
+      <li class="nav-item">
+        <a class="nav-link" href="#cover">Cover</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#opinions">Opinions</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#articles">Articles</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#errata">Errata</a>
+      </li>
+        {% endblock %}
+    </ul>
+        </nav>
+        </div>
+</div>
+
+
+<script>
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+         }
+      });
+     });
+    $('#page_contents').animate({height: 230}, 1000);
+
+    var fixmeTop = $('#page_contents').offset().top - 10;       // get initial position of the element
+    $(window).scroll(function() {                  // assign scroll event listener
+        var currentScroll = $(window).scrollTop(); // get current position
+        if (currentScroll >= fixmeTop) {           // apply position: fixed if you
+            $('#page_contents').css({                      // scroll to that element or below it
+                position: 'fixed',
+                top: '10px',
+            });
+        } else {                                   // apply position: static
+            $('#page_contents').css({                      // if you scroll above it
+                position: 'static'
+            });
+        }
+    });
+    {# Code for highlighting the nav bar#}
+
+    $(window).on('scroll', function() {
+        $('.target').each(function() {
+            if($(window).scrollTop() >= $(this).offset().top - 10) {
+                var id = $(this).attr('id');
+                $('#page_contents a').removeClass('active');
+                {#console.log($('a[href=#'+ id +']').parent());#}
+                $('a[href=#'+ id +']').addClass('active');
+            }
+         });
+    });
+
+</script>
