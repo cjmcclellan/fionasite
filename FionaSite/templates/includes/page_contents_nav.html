@@ -55,7 +55,11 @@
          }
       });
      });
-    $('#page_contents').animate({height: 230}, 1000);
+    $('#page_contents').animate({height:
+            {% block height %}
+            230
+            {% endblock %}
+    }, 1000);
 
     var fixmeTop = $('#page_contents').offset().top - 10;       // get initial position of the element
     $(window).scroll(function() {                  // assign scroll event listener

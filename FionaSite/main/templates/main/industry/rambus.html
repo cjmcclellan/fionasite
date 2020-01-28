@@ -1,0 +1,32 @@
+{% extends 'includes/basic_card.html' %}
+
+{% block cardheader %}
+    <h2 id="rambus_card" class="target">“Cool” Memory Retention Testing </h2>
+    <a href="https://pubs.acs.org/doi/abs/10.1021/acs.nanolett.7b05192">Wang, C.H. et al. Nano Letters 2018</a>
+{% endblock %}
+
+{% block cardbody %}
+    <div class="row">
+        <div class="col">
+            <dl class="dl-horizontal lead">
+                <dd>
+                    DRAM is a promising memory option for quantum computing as it has high retention at low
+                    temperatures. The task assigned to me was to determine the exact retention of DRAM at cryogenic
+                    temperatures. In order to do so, I worked with teams that designed PCB boards for DDR2/DDR3
+                    in North Carolina to figure out the power requirement of the PCB boards. Afterwards, I set up
+                    the testing environment in Sunnyvale for PCB boards and developed software programs for
+                    retention testing. I investigated the retention failure mechanism by carefully characterized
+                    temperature dependency and writing different patterns. In the end, we determined that GIDL
+                    ultimately limited the DRAM retention time and that peripheral circuits need to be customized
+                    for low temperature operation.
+                </dd>
+            </dl>
+        </div>
+        <div class="col">
+            <img src="/static/images/industry/rambus_m.png" class="img-fluid border border-dark">
+
+{#            {% include 'includes/basic_carousel.html' with carousel_name='bp' input_path='/static/images/research/bp' %}#}
+        </div>
+    </div>
+
+{% endblock %}

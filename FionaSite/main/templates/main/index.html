@@ -36,8 +36,11 @@
           <li class="nav-item">
             <a class="nav-link" href="{% url 'main:home' %}">Home</a>
           </li>
+            <li class="nav-item">
+            <a class="nav-link" href="{% url 'main:industry' %}">Industry Experience</a>
+          </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'main:research' %}">Research</a>
+            <a class="nav-link" href="{% url 'main:research' %}">PhD Research</a>
           </li>
 {#            <li class="nav-item">#}
 {#            <a class="nav-link" href="{% url 'main:publications' %}">Publications</a>#}
@@ -49,7 +52,7 @@
 {#            <a class="nav-link" href="{% url 'main:hobbies' %}">Hobbies</a>#}
 {#          </li>#}
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'main:contact_me' %}">Contact Me</a>
+            <a class="nav-link" href="{% url 'main:contact' %}">Contact Me</a>
           </li>
         </ul>
       </div>
@@ -94,7 +97,10 @@
   navbar = document.getElementById("connornav");
   var i;
   for (i = 0; i < navbar.children.length; i++){
-      if (window.location.href.includes(navbar.children[i].innerText.toLowerCase().replace(/ /g,"_"))){
+      link = window.location.href.split("/");
+      link = link[link.length - 1];
+      if (navbar.children[i].innerText.toLowerCase().includes(link)){
+          {#.replace(/ /g,"_"))){#}
           navbar.children[i].className = "nav-item active";
       }
   }

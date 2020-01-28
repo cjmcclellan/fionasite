@@ -21,6 +21,12 @@ class ResearchPage(TemplateView):
 
 
 # view for the research page
+class IndustryPage(TemplateView):
+
+    template_name = 'main/industry/industry.html'
+
+
+# view for the research page
 class DisplayPage(TemplateView):
 
     template_name = 'main/projects/projects.html'

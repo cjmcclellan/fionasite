@@ -434,3 +434,837 @@ Not Found: /favicon.ico
 "GET /home HTTP/1.1" 200 4746
 "GET /static/images/fiona_cover_image.jpeg HTTP/1.1" 404 1711
 "GET /static/images/fiona_cover_image.jpeg HTTP/1.1" 404 1711
+Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /
+"GET / HTTP/1.1" 400 26
+Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 400 26
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET / HTTP/1.1" 302 0
+"GET /home HTTP/1.1" 200 5227
+"GET /static/images/fiona_cover_image.jpeg HTTP/1.1" 200 63614
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\core\handlers\base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\urls\resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'main.urls' from 'C:\\Users\\Fiona\\Documents\\website\\fionasite\\FionaSite\\main\\urls.py'> (main:main) ''>, <URLPattern ''>], [<URLResolver <module 'main.urls' from 'C:\\Users\\Fiona\\Documents\\website\\fionasite\\FionaSite\\main\\urls.py'> (main:main) ''>, <URLPattern 'home' [name='home']>], [<URLResolver <module 'main.urls' from 'C:\\Users\\Fiona\\Documents\\website\\fionasite\\FionaSite\\main\\urls.py'> (main:main) ''>, <URLPattern 'research' [name='research']>], [<URLResolver <module 'main.urls' from 'C:\\Users\\Fiona\\Documents\\website\\fionasite\\FionaSite\\main\\urls.py'> (main:main) ''>, <URLPattern 'display' [name='display']>], [<URLResolver <module 'main.urls' from 'C:\\Users\\Fiona\\Documents\\website\\fionasite\\FionaSite\\main\\urls.py'> (main:main) ''>, <URLPattern 'contact_me' [name='contact_me']>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2804
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /home HTTP/1.1" 200 4823
+(0.003) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET / HTTP/1.1" 302 0
+"GET /home HTTP/1.1" 200 5293
+"GET /static/images/fiona_cover_image.jpeg HTTP/1.1" 200 63614
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\core\handlers\base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\urls\resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'main.urls' from 'C:\\Users\\Fiona\\Documents\\website\\fionasite\\FionaSite\\main\\urls.py'> (main:main) ''>, <URLPattern ''>], [<URLResolver <module 'main.urls' from 'C:\\Users\\Fiona\\Documents\\website\\fionasite\\FionaSite\\main\\urls.py'> (main:main) ''>, <URLPattern 'home' [name='home']>], [<URLResolver <module 'main.urls' from 'C:\\Users\\Fiona\\Documents\\website\\fionasite\\FionaSite\\main\\urls.py'> (main:main) ''>, <URLPattern 'research' [name='research']>], [<URLResolver <module 'main.urls' from 'C:\\Users\\Fiona\\Documents\\website\\fionasite\\FionaSite\\main\\urls.py'> (main:main) ''>, <URLPattern 'industry' [name='industry']>], [<URLResolver <module 'main.urls' from 'C:\\Users\\Fiona\\Documents\\website\\fionasite\\FionaSite\\main\\urls.py'> (main:main) ''>, <URLPattern 'contact_me' [name='contact_me']>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2806
+"GET /industry HTTP/1.1" 200 12995
+"GET /static/images/research/review/Review.jpg HTTP/1.1" 200 97407
+"GET /static/images/research/mono/1T1R.png HTTP/1.1" 200 1239435
+"GET /static/images/research/selector/Selector.png HTTP/1.1" 200 218912
+"GET /static/images/research/bp/BP_2.jpg HTTP/1.1" 200 44846
+"GET /research HTTP/1.1" 200 12995
+"GET /industry HTTP/1.1" 200 12995
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /industry HTTP/1.1" 200 10488
+"GET /static/images/industry/Intel_pic.png HTTP/1.1" 200 970271
+"GET /static/images/industry/rambus.png HTTP/1.1" 200 1487576
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /industry HTTP/1.1" 200 9294
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /industry HTTP/1.1" 200 9309
+(0.002) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /industry HTTP/1.1" 200 9317
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /industry HTTP/1.1" 200 9317
+"GET /static/images/industry/rambus.png HTTP/1.1" 304 0
+"GET /research HTTP/1.1" 200 13038
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /research HTTP/1.1" 200 13134
+"GET /research HTTP/1.1" 200 13134
+"GET /industry HTTP/1.1" 200 9413
+"GET /home HTTP/1.1" 200 5389
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /home HTTP/1.1" 200 5388
+"GET /home HTTP/1.1" 200 5388
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /home HTTP/1.1" 200 5390
+"GET /industry HTTP/1.1" 200 9414
+"GET /static/images/industry/Intel_pic.png HTTP/1.1" 304 0
+"GET /home HTTP/1.1" 200 5390
+"GET /industry HTTP/1.1" 200 9414
+"GET /research HTTP/1.1" 200 13135
+Exception while resolving variable 'forms' in template 'main/contact_me/contact_me.html'.
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [forms] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'yMr23uekTDPWtWpCqG2BxXzVVpLIJ22Xy0o8qhfLWAYUB4ZCsHKFyZiGhpF87vz4'>, 'request': <WSGIRequest: GET '/contact_me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x000001F61FEB2598>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000001F61FECC390>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000001F61FEF3198>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <ContactForm bound=False, valid=Unknown, fields=(email;subject;message)>, 'view': <main.views.ContactMe object at 0x000001F61FEF3400>, 'contact_success': False}, {'block': <Block Node: content. Contents: [<TextNode: '\n\n    '>, <django.template.loader_tags.IncludeNode object at 0x000001F61FDEBD30>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n    <div class="modal" i'>, <Variable Node: contact_success>, <TextNode: '" === "True");\n\n    if (t'>, <TextNode: '\n        '>, <TextNode: "\n        $('#contact_moda">]>}, {}, {'block': <Block Node: cardbody. Contents: [<TextNode: '\n        <form method="po'>, <django.template.defaulttags.CsrfTokenNode object at 0x000001F61FEFBBA8>, <TextNode: '\n            <div class="'>, <ForNode: for error in forms.email.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.subject.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.message.errors, tail_len: 3>, <TextNode: '\n            </div>\n'>]>}, {}]
+Exception while resolving variable 'forms' in template 'main/contact_me/contact_me.html'.
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [forms] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'yMr23uekTDPWtWpCqG2BxXzVVpLIJ22Xy0o8qhfLWAYUB4ZCsHKFyZiGhpF87vz4'>, 'request': <WSGIRequest: GET '/contact_me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x000001F61FEB2598>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000001F61FECC390>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000001F61FEF3198>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <ContactForm bound=False, valid=Unknown, fields=(email;subject;message)>, 'view': <main.views.ContactMe object at 0x000001F61FEF3400>, 'contact_success': False}, {'block': <Block Node: content. Contents: [<TextNode: '\n\n    '>, <django.template.loader_tags.IncludeNode object at 0x000001F61FDEBD30>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n    <div class="modal" i'>, <Variable Node: contact_success>, <TextNode: '" === "True");\n\n    if (t'>, <TextNode: '\n        '>, <TextNode: "\n        $('#contact_moda">]>}, {}, {'block': <Block Node: cardbody. Contents: [<TextNode: '\n        <form method="po'>, <django.template.defaulttags.CsrfTokenNode object at 0x000001F61FEFBBA8>, <TextNode: '\n            <div class="'>, <ForNode: for error in forms.email.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.subject.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.message.errors, tail_len: 3>, <TextNode: '\n            </div>\n'>]>}, {}]
+Exception while resolving variable 'forms' in template 'main/contact_me/contact_me.html'.
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [forms] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'yMr23uekTDPWtWpCqG2BxXzVVpLIJ22Xy0o8qhfLWAYUB4ZCsHKFyZiGhpF87vz4'>, 'request': <WSGIRequest: GET '/contact_me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x000001F61FEB2598>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000001F61FECC390>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000001F61FEF3198>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <ContactForm bound=False, valid=Unknown, fields=(email;subject;message)>, 'view': <main.views.ContactMe object at 0x000001F61FEF3400>, 'contact_success': False}, {'block': <Block Node: content. Contents: [<TextNode: '\n\n    '>, <django.template.loader_tags.IncludeNode object at 0x000001F61FDEBD30>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n    <div class="modal" i'>, <Variable Node: contact_success>, <TextNode: '" === "True");\n\n    if (t'>, <TextNode: '\n        '>, <TextNode: "\n        $('#contact_moda">]>}, {}, {'block': <Block Node: cardbody. Contents: [<TextNode: '\n        <form method="po'>, <django.template.defaulttags.CsrfTokenNode object at 0x000001F61FEFBBA8>, <TextNode: '\n            <div class="'>, <ForNode: for error in forms.email.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.subject.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.message.errors, tail_len: 3>, <TextNode: '\n            </div>\n'>]>}, {}]
+"GET /contact_me HTTP/1.1" 200 5757
+"GET /home HTTP/1.1" 200 5390
+"GET /industry HTTP/1.1" 200 9414
+"GET /research HTTP/1.1" 200 13135
+"GET /industry HTTP/1.1" 200 9414
+Exception while resolving variable 'forms' in template 'main/contact_me/contact_me.html'.
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [forms] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'R5uLtOCul78RgtXfatqXiq2ycjGZcm4CRjrRQBDVo4hPoBxfcu81jsLjyjApAPBJ'>, 'request': <WSGIRequest: GET '/contact_me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x000001F61FB33730>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000001F61FECC3C8>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000001F620704588>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <ContactForm bound=False, valid=Unknown, fields=(email;subject;message)>, 'view': <main.views.ContactMe object at 0x000001F6207048D0>, 'contact_success': False}, {'block': <Block Node: content. Contents: [<TextNode: '\n\n    '>, <django.template.loader_tags.IncludeNode object at 0x000001F6207324A8>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n    <div class="modal" i'>, <Variable Node: contact_success>, <TextNode: '" === "True");\n\n    if (t'>, <TextNode: '\n        '>, <TextNode: "\n        $('#contact_moda">]>}, {}, {'block': <Block Node: cardbody. Contents: [<TextNode: '\n        <form method="po'>, <django.template.defaulttags.CsrfTokenNode object at 0x000001F620738390>, <TextNode: '\n            <div class="'>, <ForNode: for error in forms.email.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.subject.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.message.errors, tail_len: 3>, <TextNode: '\n            </div>\n'>]>}, {}]
+Exception while resolving variable 'forms' in template 'main/contact_me/contact_me.html'.
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [forms] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'R5uLtOCul78RgtXfatqXiq2ycjGZcm4CRjrRQBDVo4hPoBxfcu81jsLjyjApAPBJ'>, 'request': <WSGIRequest: GET '/contact_me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x000001F61FB33730>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000001F61FECC3C8>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000001F620704588>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <ContactForm bound=False, valid=Unknown, fields=(email;subject;message)>, 'view': <main.views.ContactMe object at 0x000001F6207048D0>, 'contact_success': False}, {'block': <Block Node: content. Contents: [<TextNode: '\n\n    '>, <django.template.loader_tags.IncludeNode object at 0x000001F6207324A8>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n    <div class="modal" i'>, <Variable Node: contact_success>, <TextNode: '" === "True");\n\n    if (t'>, <TextNode: '\n        '>, <TextNode: "\n        $('#contact_moda">]>}, {}, {'block': <Block Node: cardbody. Contents: [<TextNode: '\n        <form method="po'>, <django.template.defaulttags.CsrfTokenNode object at 0x000001F620738390>, <TextNode: '\n            <div class="'>, <ForNode: for error in forms.email.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.subject.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.message.errors, tail_len: 3>, <TextNode: '\n            </div>\n'>]>}, {}]
+Exception while resolving variable 'forms' in template 'main/contact_me/contact_me.html'.
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [forms] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'R5uLtOCul78RgtXfatqXiq2ycjGZcm4CRjrRQBDVo4hPoBxfcu81jsLjyjApAPBJ'>, 'request': <WSGIRequest: GET '/contact_me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x000001F61FB33730>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000001F61FECC3C8>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000001F620704588>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <ContactForm bound=False, valid=Unknown, fields=(email;subject;message)>, 'view': <main.views.ContactMe object at 0x000001F6207048D0>, 'contact_success': False}, {'block': <Block Node: content. Contents: [<TextNode: '\n\n    '>, <django.template.loader_tags.IncludeNode object at 0x000001F6207324A8>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n    <div class="modal" i'>, <Variable Node: contact_success>, <TextNode: '" === "True");\n\n    if (t'>, <TextNode: '\n        '>, <TextNode: "\n        $('#contact_moda">]>}, {}, {'block': <Block Node: cardbody. Contents: [<TextNode: '\n        <form method="po'>, <django.template.defaulttags.CsrfTokenNode object at 0x000001F620738390>, <TextNode: '\n            <div class="'>, <ForNode: for error in forms.email.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.subject.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.message.errors, tail_len: 3>, <TextNode: '\n            </div>\n'>]>}, {}]
+"GET /contact_me HTTP/1.1" 200 5757
+"GET /home HTTP/1.1" 200 5390
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /home HTTP/1.1" 200 5445
+"GET /home HTTP/1.1" 200 5445
+"GET /research HTTP/1.1" 200 13190
+Exception while resolving variable 'forms' in template 'main/contact_me/contact_me.html'.
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [forms] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'ATVmtvSXTKcr2PmW2xySujs1xj8jgJ0MA7SsQiToWHlpaXWW4ygWvlbMTj2JEcxT'>, 'request': <WSGIRequest: GET '/contact_me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x000001F458C12C80>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000001F458C4ED30>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000001F458C3BA20>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <ContactForm bound=False, valid=Unknown, fields=(email;subject;message)>, 'view': <main.views.ContactMe object at 0x000001F458C3B9E8>, 'contact_success': False}, {'block': <Block Node: content. Contents: [<TextNode: '\n\n    '>, <django.template.loader_tags.IncludeNode object at 0x000001F458C2D828>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n    <div class="modal" i'>, <Variable Node: contact_success>, <TextNode: '" === "True");\n\n    if (t'>, <TextNode: '\n        '>, <TextNode: "\n        $('#contact_moda">]>}, {}, {'block': <Block Node: cardbody. Contents: [<TextNode: '\n        <form method="po'>, <django.template.defaulttags.CsrfTokenNode object at 0x000001F458C5DC50>, <TextNode: '\n            <div class="'>, <ForNode: for error in forms.email.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.subject.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.message.errors, tail_len: 3>, <TextNode: '\n            </div>\n'>]>}, {}]
+Exception while resolving variable 'forms' in template 'main/contact_me/contact_me.html'.
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [forms] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'ATVmtvSXTKcr2PmW2xySujs1xj8jgJ0MA7SsQiToWHlpaXWW4ygWvlbMTj2JEcxT'>, 'request': <WSGIRequest: GET '/contact_me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x000001F458C12C80>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000001F458C4ED30>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000001F458C3BA20>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <ContactForm bound=False, valid=Unknown, fields=(email;subject;message)>, 'view': <main.views.ContactMe object at 0x000001F458C3B9E8>, 'contact_success': False}, {'block': <Block Node: content. Contents: [<TextNode: '\n\n    '>, <django.template.loader_tags.IncludeNode object at 0x000001F458C2D828>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n    <div class="modal" i'>, <Variable Node: contact_success>, <TextNode: '" === "True");\n\n    if (t'>, <TextNode: '\n        '>, <TextNode: "\n        $('#contact_moda">]>}, {}, {'block': <Block Node: cardbody. Contents: [<TextNode: '\n        <form method="po'>, <django.template.defaulttags.CsrfTokenNode object at 0x000001F458C5DC50>, <TextNode: '\n            <div class="'>, <ForNode: for error in forms.email.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.subject.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.message.errors, tail_len: 3>, <TextNode: '\n            </div>\n'>]>}, {}]
+Exception while resolving variable 'forms' in template 'main/contact_me/contact_me.html'.
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [forms] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'ATVmtvSXTKcr2PmW2xySujs1xj8jgJ0MA7SsQiToWHlpaXWW4ygWvlbMTj2JEcxT'>, 'request': <WSGIRequest: GET '/contact_me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x000001F458C12C80>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000001F458C4ED30>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000001F458C3BA20>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <ContactForm bound=False, valid=Unknown, fields=(email;subject;message)>, 'view': <main.views.ContactMe object at 0x000001F458C3B9E8>, 'contact_success': False}, {'block': <Block Node: content. Contents: [<TextNode: '\n\n    '>, <django.template.loader_tags.IncludeNode object at 0x000001F458C2D828>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n    <div class="modal" i'>, <Variable Node: contact_success>, <TextNode: '" === "True");\n\n    if (t'>, <TextNode: '\n        '>, <TextNode: "\n        $('#contact_moda">]>}, {}, {'block': <Block Node: cardbody. Contents: [<TextNode: '\n        <form method="po'>, <django.template.defaulttags.CsrfTokenNode object at 0x000001F458C5DC50>, <TextNode: '\n            <div class="'>, <ForNode: for error in forms.email.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.subject.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.message.errors, tail_len: 3>, <TextNode: '\n            </div>\n'>]>}, {}]
+"GET /contact_me HTTP/1.1" 200 5812
+"GET /research HTTP/1.1" 200 13190
+"GET /industry HTTP/1.1" 200 9469
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /industry HTTP/1.1" 200 9470
+"GET /industry HTTP/1.1" 200 9466
+"GET /static/images/industry/rambus.png HTTP/1.1" 304 0
+"GET /industry HTTP/1.1" 200 9466
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /industry HTTP/1.1" 200 9502
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /industry HTTP/1.1" 200 9369
+"GET /home HTTP/1.1" 200 5345
+"GET /research HTTP/1.1" 200 13090
+Exception while resolving variable 'forms' in template 'main/contact_me/contact_me.html'.
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [forms] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'J5YK0ZpZuGu4TgnT3R3fM9spyUDXPW90JjVQnMqqxDD21oXT5SLjNbbaUUxndpG7'>, 'request': <WSGIRequest: GET '/contact_me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x0000022264AA50D0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x0000022264AEC5C0>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0000022264AB1DD8>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <ContactForm bound=False, valid=Unknown, fields=(email;subject;message)>, 'view': <main.views.ContactMe object at 0x0000022264AB1F98>, 'contact_success': False}, {'block': <Block Node: content. Contents: [<TextNode: '\n\n    '>, <django.template.loader_tags.IncludeNode object at 0x0000022264ACCEB8>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n    <div class="modal" i'>, <Variable Node: contact_success>, <TextNode: '" === "True");\n\n    if (t'>, <TextNode: '\n        '>, <TextNode: "\n        $('#contact_moda">]>}, {}, {'block': <Block Node: cardbody. Contents: [<TextNode: '\n        <form method="po'>, <django.template.defaulttags.CsrfTokenNode object at 0x0000022264AFABE0>, <TextNode: '\n            <div class="'>, <ForNode: for error in forms.email.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.subject.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.message.errors, tail_len: 3>, <TextNode: '\n            </div>\n'>]>}, {}]
+Exception while resolving variable 'forms' in template 'main/contact_me/contact_me.html'.
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [forms] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'J5YK0ZpZuGu4TgnT3R3fM9spyUDXPW90JjVQnMqqxDD21oXT5SLjNbbaUUxndpG7'>, 'request': <WSGIRequest: GET '/contact_me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x0000022264AA50D0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x0000022264AEC5C0>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0000022264AB1DD8>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <ContactForm bound=False, valid=Unknown, fields=(email;subject;message)>, 'view': <main.views.ContactMe object at 0x0000022264AB1F98>, 'contact_success': False}, {'block': <Block Node: content. Contents: [<TextNode: '\n\n    '>, <django.template.loader_tags.IncludeNode object at 0x0000022264ACCEB8>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n    <div class="modal" i'>, <Variable Node: contact_success>, <TextNode: '" === "True");\n\n    if (t'>, <TextNode: '\n        '>, <TextNode: "\n        $('#contact_moda">]>}, {}, {'block': <Block Node: cardbody. Contents: [<TextNode: '\n        <form method="po'>, <django.template.defaulttags.CsrfTokenNode object at 0x0000022264AFABE0>, <TextNode: '\n            <div class="'>, <ForNode: for error in forms.email.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.subject.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.message.errors, tail_len: 3>, <TextNode: '\n            </div>\n'>]>}, {}]
+Exception while resolving variable 'forms' in template 'main/contact_me/contact_me.html'.
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [forms] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'J5YK0ZpZuGu4TgnT3R3fM9spyUDXPW90JjVQnMqqxDD21oXT5SLjNbbaUUxndpG7'>, 'request': <WSGIRequest: GET '/contact_me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x0000022264AA50D0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x0000022264AEC5C0>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0000022264AB1DD8>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <ContactForm bound=False, valid=Unknown, fields=(email;subject;message)>, 'view': <main.views.ContactMe object at 0x0000022264AB1F98>, 'contact_success': False}, {'block': <Block Node: content. Contents: [<TextNode: '\n\n    '>, <django.template.loader_tags.IncludeNode object at 0x0000022264ACCEB8>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n    <div class="modal" i'>, <Variable Node: contact_success>, <TextNode: '" === "True");\n\n    if (t'>, <TextNode: '\n        '>, <TextNode: "\n        $('#contact_moda">]>}, {}, {'block': <Block Node: cardbody. Contents: [<TextNode: '\n        <form method="po'>, <django.template.defaulttags.CsrfTokenNode object at 0x0000022264AFABE0>, <TextNode: '\n            <div class="'>, <ForNode: for error in forms.email.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.subject.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.message.errors, tail_len: 3>, <TextNode: '\n            </div>\n'>]>}, {}]
+"GET /contact_me HTTP/1.1" 200 5712
+Exception while resolving variable 'forms' in template 'main/contact_me/contact_me.html'.
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [forms] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'fsneon0gOtxCed8My5qSwJlf7YcEzndUfGkkLa1HRqGAmlIMA68WxL40tY64XQK1'>, 'request': <WSGIRequest: GET '/contact_me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x0000022264ACB598>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x0000022264AF4240>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0000022264AFAB38>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <ContactForm bound=False, valid=Unknown, fields=(email;subject;message)>, 'view': <main.views.ContactMe object at 0x0000022264AFA9B0>, 'contact_success': False}, {'block': <Block Node: content. Contents: [<TextNode: '\n\n    '>, <django.template.loader_tags.IncludeNode object at 0x0000022264AD29E8>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n    <div class="modal" i'>, <Variable Node: contact_success>, <TextNode: '" === "True");\n\n    if (t'>, <TextNode: '\n        '>, <TextNode: "\n        $('#contact_moda">]>}, {}, {'block': <Block Node: cardbody. Contents: [<TextNode: '\n        <form method="po'>, <django.template.defaulttags.CsrfTokenNode object at 0x0000022264ACCB38>, <TextNode: '\n            <div class="'>, <ForNode: for error in forms.email.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.subject.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.message.errors, tail_len: 3>, <TextNode: '\n            </div>\n'>]>}, {}]
+Exception while resolving variable 'forms' in template 'main/contact_me/contact_me.html'.
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [forms] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'fsneon0gOtxCed8My5qSwJlf7YcEzndUfGkkLa1HRqGAmlIMA68WxL40tY64XQK1'>, 'request': <WSGIRequest: GET '/contact_me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x0000022264ACB598>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x0000022264AF4240>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0000022264AFAB38>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <ContactForm bound=False, valid=Unknown, fields=(email;subject;message)>, 'view': <main.views.ContactMe object at 0x0000022264AFA9B0>, 'contact_success': False}, {'block': <Block Node: content. Contents: [<TextNode: '\n\n    '>, <django.template.loader_tags.IncludeNode object at 0x0000022264AD29E8>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n    <div class="modal" i'>, <Variable Node: contact_success>, <TextNode: '" === "True");\n\n    if (t'>, <TextNode: '\n        '>, <TextNode: "\n        $('#contact_moda">]>}, {}, {'block': <Block Node: cardbody. Contents: [<TextNode: '\n        <form method="po'>, <django.template.defaulttags.CsrfTokenNode object at 0x0000022264ACCB38>, <TextNode: '\n            <div class="'>, <ForNode: for error in forms.email.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.subject.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.message.errors, tail_len: 3>, <TextNode: '\n            </div>\n'>]>}, {}]
+Exception while resolving variable 'forms' in template 'main/contact_me/contact_me.html'.
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [forms] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'fsneon0gOtxCed8My5qSwJlf7YcEzndUfGkkLa1HRqGAmlIMA68WxL40tY64XQK1'>, 'request': <WSGIRequest: GET '/contact_me'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x0000022264ACB598>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x0000022264AF4240>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x0000022264AFAB38>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <ContactForm bound=False, valid=Unknown, fields=(email;subject;message)>, 'view': <main.views.ContactMe object at 0x0000022264AFA9B0>, 'contact_success': False}, {'block': <Block Node: content. Contents: [<TextNode: '\n\n    '>, <django.template.loader_tags.IncludeNode object at 0x0000022264AD29E8>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n    <div class="modal" i'>, <Variable Node: contact_success>, <TextNode: '" === "True");\n\n    if (t'>, <TextNode: '\n        '>, <TextNode: "\n        $('#contact_moda">]>}, {}, {'block': <Block Node: cardbody. Contents: [<TextNode: '\n        <form method="po'>, <django.template.defaulttags.CsrfTokenNode object at 0x0000022264ACCB38>, <TextNode: '\n            <div class="'>, <ForNode: for error in forms.email.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.subject.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.message.errors, tail_len: 3>, <TextNode: '\n            </div>\n'>]>}, {}]
+"GET /contact_me HTTP/1.1" 200 5712
+(0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+(0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+"GET /home HTTP/1.1" 200 5342
+Exception while resolving variable 'forms' in template 'main/contact_me/contact_me.html'.
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [forms] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'OBlWYoG7eSLSSuWf9OHRRsnJCzBD8eKnOPi2lbHyhPUQ0CwfbPpVSu6uYzv3wHhu'>, 'request': <WSGIRequest: GET '/contact'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x000001ED5F2D70D0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000001ED5F2F1E48>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000001ED5F2E2F60>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <ContactForm bound=False, valid=Unknown, fields=(email;subject;message)>, 'view': <main.views.ContactMe object at 0x000001ED5F2E2978>, 'contact_success': False}, {'block': <Block Node: content. Contents: [<TextNode: '\n\n    '>, <django.template.loader_tags.IncludeNode object at 0x000001ED5F2FD780>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n    <div class="modal" i'>, <Variable Node: contact_success>, <TextNode: '" === "True");\n\n    if (t'>, <TextNode: '\n        '>, <TextNode: "\n        $('#contact_moda">]>}, {}, {'block': <Block Node: cardbody. Contents: [<TextNode: '\n        <form method="po'>, <django.template.defaulttags.CsrfTokenNode object at 0x000001ED5F323358>, <TextNode: '\n            <div class="'>, <ForNode: for error in forms.email.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.subject.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.message.errors, tail_len: 3>, <TextNode: '\n            </div>\n'>]>}, {}]
+Exception while resolving variable 'forms' in template 'main/contact_me/contact_me.html'.
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [forms] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'OBlWYoG7eSLSSuWf9OHRRsnJCzBD8eKnOPi2lbHyhPUQ0CwfbPpVSu6uYzv3wHhu'>, 'request': <WSGIRequest: GET '/contact'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x000001ED5F2D70D0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000001ED5F2F1E48>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000001ED5F2E2F60>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <ContactForm bound=False, valid=Unknown, fields=(email;subject;message)>, 'view': <main.views.ContactMe object at 0x000001ED5F2E2978>, 'contact_success': False}, {'block': <Block Node: content. Contents: [<TextNode: '\n\n    '>, <django.template.loader_tags.IncludeNode object at 0x000001ED5F2FD780>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n    <div class="modal" i'>, <Variable Node: contact_success>, <TextNode: '" === "True");\n\n    if (t'>, <TextNode: '\n        '>, <TextNode: "\n        $('#contact_moda">]>}, {}, {'block': <Block Node: cardbody. Contents: [<TextNode: '\n        <form method="po'>, <django.template.defaulttags.CsrfTokenNode object at 0x000001ED5F323358>, <TextNode: '\n            <div class="'>, <ForNode: for error in forms.email.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.subject.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.message.errors, tail_len: 3>, <TextNode: '\n            </div>\n'>]>}, {}]
+Exception while resolving variable 'forms' in template 'main/contact_me/contact_me.html'.
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [forms] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'OBlWYoG7eSLSSuWf9OHRRsnJCzBD8eKnOPi2lbHyhPUQ0CwfbPpVSu6uYzv3wHhu'>, 'request': <WSGIRequest: GET '/contact'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x000001ED5F2D70D0>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000001ED5F2F1E48>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000001ED5F2E2F60>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <ContactForm bound=False, valid=Unknown, fields=(email;subject;message)>, 'view': <main.views.ContactMe object at 0x000001ED5F2E2978>, 'contact_success': False}, {'block': <Block Node: content. Contents: [<TextNode: '\n\n    '>, <django.template.loader_tags.IncludeNode object at 0x000001ED5F2FD780>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n    <div class="modal" i'>, <Variable Node: contact_success>, <TextNode: '" === "True");\n\n    if (t'>, <TextNode: '\n        '>, <TextNode: "\n        $('#contact_moda">]>}, {}, {'block': <Block Node: cardbody. Contents: [<TextNode: '\n        <form method="po'>, <django.template.defaulttags.CsrfTokenNode object at 0x000001ED5F323358>, <TextNode: '\n            <div class="'>, <ForNode: for error in forms.email.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.subject.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.message.errors, tail_len: 3>, <TextNode: '\n            </div>\n'>]>}, {}]
+"GET /contact HTTP/1.1" 200 5709
+"GET /research HTTP/1.1" 200 13087
+"GET /industry HTTP/1.1" 200 9366
+"GET /home HTTP/1.1" 200 5342
+"GET /industry HTTP/1.1" 200 9366
+"GET /research HTTP/1.1" 200 13087
+Exception while resolving variable 'forms' in template 'main/contact_me/contact_me.html'.
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [forms] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'GeIBdzviRA8UXzBhyL1YViOL71DwUM5GGsFHAmwJUxhS5HbhAMJ2Wkxwt1xWifCN'>, 'request': <WSGIRequest: GET '/contact'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x000001ED5F2E3598>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000001ED5F3235C0>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000001ED5F2FD3C8>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <ContactForm bound=False, valid=Unknown, fields=(email;subject;message)>, 'view': <main.views.ContactMe object at 0x000001ED5F2FD7B8>, 'contact_success': False}, {'block': <Block Node: content. Contents: [<TextNode: '\n\n    '>, <django.template.loader_tags.IncludeNode object at 0x000001ED5F320BE0>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n    <div class="modal" i'>, <Variable Node: contact_success>, <TextNode: '" === "True");\n\n    if (t'>, <TextNode: '\n        '>, <TextNode: "\n        $('#contact_moda">]>}, {}, {'block': <Block Node: cardbody. Contents: [<TextNode: '\n        <form method="po'>, <django.template.defaulttags.CsrfTokenNode object at 0x000001ED5F367748>, <TextNode: '\n            <div class="'>, <ForNode: for error in forms.email.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.subject.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.message.errors, tail_len: 3>, <TextNode: '\n            </div>\n'>]>}, {}]
+Exception while resolving variable 'forms' in template 'main/contact_me/contact_me.html'.
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [forms] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'GeIBdzviRA8UXzBhyL1YViOL71DwUM5GGsFHAmwJUxhS5HbhAMJ2Wkxwt1xWifCN'>, 'request': <WSGIRequest: GET '/contact'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x000001ED5F2E3598>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000001ED5F3235C0>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000001ED5F2FD3C8>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <ContactForm bound=False, valid=Unknown, fields=(email;subject;message)>, 'view': <main.views.ContactMe object at 0x000001ED5F2FD7B8>, 'contact_success': False}, {'block': <Block Node: content. Contents: [<TextNode: '\n\n    '>, <django.template.loader_tags.IncludeNode object at 0x000001ED5F320BE0>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n    <div class="modal" i'>, <Variable Node: contact_success>, <TextNode: '" === "True");\n\n    if (t'>, <TextNode: '\n        '>, <TextNode: "\n        $('#contact_moda">]>}, {}, {'block': <Block Node: cardbody. Contents: [<TextNode: '\n        <form method="po'>, <django.template.defaulttags.CsrfTokenNode object at 0x000001ED5F367748>, <TextNode: '\n            <div class="'>, <ForNode: for error in forms.email.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.subject.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.message.errors, tail_len: 3>, <TextNode: '\n            </div>\n'>]>}, {}]
+Exception while resolving variable 'forms' in template 'main/contact_me/contact_me.html'.
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\context.py", line 83, in __getitem__
+    raise KeyError(key)
+KeyError: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 835, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(type(current), bit):
+AttributeError: type object 'RequestContext' has no attribute 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'forms'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Fiona\Documents\website\fionasite\env\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [forms] in [{'True': True, 'False': False, 'None': None}, {'csrf_token': <SimpleLazyObject: 'GeIBdzviRA8UXzBhyL1YViOL71DwUM5GGsFHAmwJUxhS5HbhAMJ2Wkxwt1xWifCN'>, 'request': <WSGIRequest: GET '/contact'>, 'user': <SimpleLazyObject: <function AuthenticationMiddleware.process_request.<locals>.<lambda> at 0x000001ED5F2E3598>>, 'perms': <django.contrib.auth.context_processors.PermWrapper object at 0x000001ED5F3235C0>, 'messages': <django.contrib.messages.storage.fallback.FallbackStorage object at 0x000001ED5F2FD3C8>, 'DEFAULT_MESSAGE_LEVELS': {'DEBUG': 10, 'INFO': 20, 'SUCCESS': 25, 'WARNING': 30, 'ERROR': 40}}, {}, {'form': <ContactForm bound=False, valid=Unknown, fields=(email;subject;message)>, 'view': <main.views.ContactMe object at 0x000001ED5F2FD7B8>, 'contact_success': False}, {'block': <Block Node: content. Contents: [<TextNode: '\n\n    '>, <django.template.loader_tags.IncludeNode object at 0x000001ED5F320BE0>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n'>, <TextNode: '\n    <div class="modal" i'>, <Variable Node: contact_success>, <TextNode: '" === "True");\n\n    if (t'>, <TextNode: '\n        '>, <TextNode: "\n        $('#contact_moda">]>}, {}, {'block': <Block Node: cardbody. Contents: [<TextNode: '\n        <form method="po'>, <django.template.defaulttags.CsrfTokenNode object at 0x000001ED5F367748>, <TextNode: '\n            <div class="'>, <ForNode: for error in forms.email.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.subject.errors, tail_len: 3>, <TextNode: '\n            </div>\n     '>, <ForNode: for error in forms.message.errors, tail_len: 3>, <TextNode: '\n            </div>\n'>]>}, {}]
+"GET /contact HTTP/1.1" 200 5709
+"GET /home HTTP/1.1" 200 5342
+"GET /industry HTTP/1.1" 200 9366
+"GET /industry HTTP/1.1" 200 9377
+"GET /static/images/industry/rambus.png HTTP/1.1" 304 0
+"GET /static/images/industry/Intel_m.png HTTP/1.1" 200 978481
+"GET /industry HTTP/1.1" 200 9384
+"GET /static/images/industry/Intel_update.png HTTP/1.1" 200 978405
+"GET /static/images/industry/rambus_m.png HTTP/1.1" 200 1427714
+"GET /home HTTP/1.1" 200 5342
+"GET /research HTTP/1.1" 200 13087
+"GET /home HTTP/1.1" 200 5333
+"GET /industry HTTP/1.1" 200 9384
+"GET /static/images/industry/Intel_update.png HTTP/1.1" 304 0
+"GET /static/images/industry/rambus_m.png HTTP/1.1" 304 0
+"GET /research HTTP/1.1" 200 13087
+"GET /research HTTP/1.1" 200 13215

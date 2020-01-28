@@ -1,0 +1,17 @@
+{% extends 'main/index.html' %}
+
+
+{% block content %}
+    {% load staticfiles %}
+        {% include 'main/industry/tsmc.html' %}
+    <br>
+            {% include 'main/industry/rambus.html' %}
+
+    <div style="padding-top: 500px">
+
+    </div>
+{% endblock %}
+
+{% block sidebar %}
+        {% include 'main/industry/research_nav.html' %}
+{% endblock %}
